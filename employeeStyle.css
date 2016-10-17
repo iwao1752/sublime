@@ -1,0 +1,94 @@
+table.List{
+    border-collapse: collapse;
+    border: 1px solid;
+    table-layout: fixed;
+}
+
+p {
+    font-family: Meiryo;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+p.title {
+    font-size: 13pt;
+    text-align: center;
+}
+
+caption.List{
+    font-family: Meiryo;
+    font-size: 13pt;
+    font-weight: bold;  
+    padding-bottom: 10px;
+}
+
+th.base{
+    border: 1px solid;
+    border-color: black;
+    text-align: center;
+    padding: 4px 8px;
+    font-family: Meiryo;
+    color: white;
+    background-color: #49a9d4;
+}
+
+td.base{
+    border: 1px solid;
+    font-family: Meiryo;
+    padding: 2px 5px;
+}
+
+div.address{
+    background-color: #b0e0e6;
+    font-family: Meiryo;
+    font-size: 9pt;
+    padding: 10px 10px;
+    border: 1px solid;
+    width: 994px;
+    
+}
+
+a.address{
+    font-family: Meiryo;
+    font-size: 9pt;
+    padding: 0 6pt;
+    font-weight: bold;
+}
+
+a.jump{
+    width: 80px;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Meiryo;
+    text-decoration: none;
+    display: inline;
+    text-align: center;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #49a9d4;
+    border-radius: 5px;
+    background-image:linear-gradient(top,#fff 0%,#000);
+    background-image:gradient(liear,left top,left bottom,from(#fff),to(#000));
+    background-image:-moz-linear-gradient(top,#fff 0%,#000);
+    background-image:-webkit-gradient(liear,left top,left bottom,from(#fff),to(#000));
+}
+
+a.jump:hover{
+    opacity: 0.7;
+    font-weight: 900;
+}
+
+a.top{
+    font-family: Meiryo;
+    font-size: 9pt;
+    align: right;
+}
+
+tr.base:hover {
+    opacity: 0.9;
+    font-weight: bold;
+    background-color: #BAD3FF;
+    color: white;
+    border: 1px solid;
+    border-color: black;
+}
