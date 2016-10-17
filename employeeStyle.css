@@ -1,4 +1,5 @@
-table.List{
+/* 従業員連絡先一覧用のCSS */
+able.List{
     border-collapse: collapse;
     border: 1px solid;
     table-layout: fixed;
