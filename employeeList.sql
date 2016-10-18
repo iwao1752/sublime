@@ -1,0 +1,1 @@
+SELECT Id, Name, displayList__c, class1__c, class2__c, class3__c, sortList__c, Phonetic__c, cellular__c, cMail__c FROM User WHERE IsActive = true
