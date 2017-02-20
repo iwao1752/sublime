@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calendar</title>
+    <script>
+        function kyou(){
+            var week = new Array("日","月","火","水","木","金","土");
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth()+1;
+            var day = date.getDate();
+            var weekday = week[date.getDay()];
+            document.getElementById("today").innerHTML = year + "年" + month + "月" + day + "日" + "(" + weekday + ")";
+        }
+
+        function calendar(){
+            var week = new Array("日","月","火","水","木","金","土");
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth();
+            var myDate = new Date(year, month+1, 0);
+            /*document.getElementById("calendar").innerHTML = "今月は、" + myDate.getDate() + "日まであります";*/
+            var txt = "";
+            for(var i = 1; i < myDate.getDate()+1; i++){
+                var setDay = new Date(year, month, i);
+                txt += setDay.getDate() + "日(" + week[setDay.getDay()] + ")<br>" ;
+            }
+            document.getElementById("days").innerHTML = txt;
+        }
+    </script>
+</head>
+<body>
+<h3>カレンダーを表示するスクリプト</h3>
+<p>今日の日付を取得して、同じ月のカレンダーを表示する</p>
+<button onclick="kyou()">今日の日付を表示する</button>
+<p>今日の日付は >>> <span id="today"></span></p>
+<button onclick="calendar()">カレンダーを表示</button>
+<p id="calendar"></p>
+<p id="days"></p>
+
+</body>
+</html>
+

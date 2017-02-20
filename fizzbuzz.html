@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FizzBuzz問題</title>
+    <script>
+        function init(){
+            var ans = "";
+            for( var i = 1; i < 101; i++ ){
+                if( i % 3 == 0 && i % 5 == 0 ){
+                    ans += "FizzBuzz!" + "<br>";
+                } else if( i % 5 == 0 ){
+                    ans += "Buzz" + "<br>";
+                } else if( i % 3 == 0 ){
+                    ans += "Fizz" + "<br>";
+                } else {
+                    ans += i + "<br>";
+                }
+            }
+            document.getElementById("fizzbuzz").innerHTML = ans;
+        }
+
+        function answer(){
+            var target = parseInt(document.getElementById("input1").value);
+            var ans = "";
+                if( target % 3 == 0 && target % 5 == 0 ){
+                    ans = "FizzBuzz!";
+                } else if( target % 5 == 0 ){
+                    ans = "Buzz";
+                } else if( target % 3 == 0 ){
+                    ans = "Fizz";
+                } else {
+                    ans = target;
+                }
+            document.getElementById("answer").innerHTML = ans;
+
+        }
+    </script>
+</head>
+<body>
+<h2>FizzBuzz問題</h2>
+<p>３で割り切れる場合は「Fizz」、５で割り切れる場合は「Buzz」、３でも５でも割り切れる場合は「FizzBuzz」と表示する</p>
+<button onclick="init()">FizzBuzzを検証</button>
+<p id="fizzbuzz"></p>
+
+<p><input id="input1" type="number" onblur="answer()"></p>
+
+<p id="answer"></p>
+
+</body>
+</html>
