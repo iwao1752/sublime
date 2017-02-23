@@ -1,7 +1,7 @@
 Select ID, NAME, RECORDTYPEID, LEADSOURCE, STATUS, OWNERID, CREATEDDATE, BAITAI__C, JYUSHOTODOUHUKEN__C, LP_KEIYU__C, MENSETUSHUUGYOUKIBOU__C, WEBKP__C, Ankenkanrino1__c
  FROM Lead
  WHERE
- CreatedDate >= 2017-02-21T09:55:00.000Z
+ CreatedDate >= 2017-02-22T09:55:00.000Z
  AND JobPrefecture__c != '東京都'
  AND JobPrefecture__c != '神奈川県'
  AND JobPrefecture__c != '千葉県'
